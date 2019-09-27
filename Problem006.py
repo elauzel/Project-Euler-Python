@@ -9,3 +9,16 @@
 #
 # Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.
 
+
+def square_sum_difference(ceiling: int):
+    nums = range(1, ceiling + 1)
+    sum_of_squares = sum([x ** 2 for x in nums])
+    square_of_sums = sum([x for x in nums]) ** 2
+    return abs(square_of_sums - sum_of_squares)
+
+
+# def test():
+#     assert 2640 == square_sum_difference(10)
+
+
+print("answer:", square_sum_difference(100))

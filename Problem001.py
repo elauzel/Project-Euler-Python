@@ -9,7 +9,7 @@ def natural_numbers_sum(ceiling: int):
 
 
 # def test():
-#     assert natural_numbers_sum(10) == 23
+#     assert 23 == natural_numbers_sum(10)
 
 
 print("answer:", natural_numbers_sum(1000))

@@ -25,7 +25,7 @@ def largest_prime_factor(n: int):
 
 
 # def test():
-#     assert largest_prime_factor(13195) == 29
+#     assert 29 == largest_prime_factor(13195)
 
 
 print("answer:", largest_prime_factor(600851475143))

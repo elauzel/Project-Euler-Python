@@ -25,7 +25,7 @@ def fib_numbers(ceiling: int, previous_numbers=[1, 2]):
 
 
 # def test():
-#     assert sum_even_fib_numers(100) == 44
+#     assert 44 == sum_even_fib_numers(100)
 
 
 print("answer:", sum_even_fib_numers(4000000))

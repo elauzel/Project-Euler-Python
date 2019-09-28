@@ -5,9 +5,9 @@
 
 def prime_number(n: int):
     primes = [2]
-    i = 2
+    i = 1
     while primes.__len__() < n:
-        i += 1
+        i += 2
         if all(i % y != 0 for y in primes):
             if primes.__len__() == n - 1:
                 return i

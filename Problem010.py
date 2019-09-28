@@ -7,14 +7,15 @@ import math
 
 
 def sum_of_primes_below_n(n: int):
-    not_primes = []
+    sieve = [True] * n
+    sieve[0] = False
+    sieve[1] = False
     for x in range(2, int(math.sqrt(n)) + 1):
-        i = x
+        i = x * 2
         while i < n:
+            sieve[i] = False
             i += x
-            not_primes.append(i)
-    sieve = set(not_primes)
-    return sum([x for x in range(2, n) if x not in sieve])
+    return sum([x for x in range(2, n) if sieve[x]])
 
 
 # def test():

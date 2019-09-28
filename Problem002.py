@@ -8,10 +8,10 @@
 
 
 def sum_even_fib_numers(ceiling: int):
-    return sum([x for x in fib_numbers(ceiling) if x % 2 == 0])
+    return sum([x for x in _fib_numbers(ceiling) if x % 2 == 0])
 
 
-def fib_numbers(ceiling: int, previous_numbers=[1, 2]):
+def _fib_numbers(ceiling: int, previous_numbers=[1, 2]):
     length = previous_numbers.__len__()
     prev1 = previous_numbers[length - 1]
     prev2 = previous_numbers[length - 2]
@@ -21,7 +21,7 @@ def fib_numbers(ceiling: int, previous_numbers=[1, 2]):
         return previous_numbers
     else:
         previous_numbers.append(next_num)
-        return fib_numbers(ceiling, previous_numbers)
+        return _fib_numbers(ceiling, previous_numbers)
 
 
 # def test():

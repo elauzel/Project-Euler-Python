@@ -17,13 +17,9 @@ def largest_palindrome(digits: int):
 
 def is_palindrome(s: str):
     length = s.__len__()
-
-    if length % 2 == 0:
-        left_half = s[0: int(length / 2)]
-        right_half = s[int(length / 2):]
-    else:
-        left_half = s[0:int((length - 1) / 2)]
-        right_half = s[int((length + 1) / 2):]
+    even = length % 2 == 0
+    left_half = s[0: int(length / 2)] if even else s[0:int((length - 1) / 2)]
+    right_half = s[int(length / 2):] if even else s[int((length + 1) / 2):]
     return left_half == right_half[::-1]
 
 

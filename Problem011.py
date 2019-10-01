@@ -56,7 +56,7 @@ def calc_adjacent_numbers_product(grid, adjacent_numbers_count: int):
     grid_height = grid.__len__()
     grid_width = grid[0].__len__()
 
-    biggest_product = 1
+    biggest_product = 0
     for x in range(0, grid_width):
         for y in range(0, grid_height):
             bottom = y + adjacent_numbers_count - 1

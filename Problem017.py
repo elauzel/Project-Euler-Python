@@ -114,4 +114,5 @@ def _sum_two_digits(n: int):
 #     assert 11 == _sum_four_digits(1000)  # one thousand
 #     assert 17 == _sum_four_digits(1001)  # one thousand and one
 
+
 print("answer:", impl(1001))

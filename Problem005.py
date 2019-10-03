@@ -14,4 +14,5 @@ def smallest_number(range_ceiling: int):
 # def test():
 #     assert 2520 == smallest_number(10)
 
+
 print("answer:", smallest_number(20))
